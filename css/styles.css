@@ -34,6 +34,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background-image: url(../assets/img/backgoundcolours.png);
+    
 }
 ol, ul {
 	list-style: none;
@@ -161,6 +163,10 @@ table {
     letter-spacing: -0.9px;
     flex: 1;
     padding-left: 10px;
+    
+}
+.navbar-button--container-search input:focus{
+    outline: none;
     
 }
 .navbar-button--container-search button{
@@ -303,6 +309,7 @@ table {
     padding: 50px 10px;
     font-family: var(--font-family-primary);
     border-bottom: 1px solid #dfdfdf;
+    background-color: white;
 }
 
 .openSource-div article{
@@ -331,18 +338,24 @@ table {
     line-height: 1.5;
 } 
 
+
+/* aqui empieza el footer */
 .footer{
     padding: 50px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
 }
+
 .footer-container{
     display: flex;
     justify-content: center;
     max-width: 1300px;
     width: 100%;
     gap: 20px;
+    background-color: white;
 }
 
 .footer-logo{
@@ -354,11 +367,11 @@ table {
 }
 
 .footer-logo img{
-    /* background-color: white; */
+    
     width: 60px;
 }
 .footer-logo img:nth-child(2){
-    /* background-color: white; */
+   
     width: 50px;
 }
 .footer-support, .footer-company, .footer-terms{
