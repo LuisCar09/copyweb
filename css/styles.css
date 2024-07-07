@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Fira+Mono:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+:root{
+    --font-family-primary:'Poppins';
+    --font-family-secundary:'Arimo';
+    --font-family-third:'Fira Mono';
+}
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.main-container{
+    overflow: hidden;
+}
+.landing-section{
+    height: 100vh;
+    background: url('../assets/img/backgoundcolours.png');
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    padding-top: 8px;
+    
+}
+.landing-section--navbar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.landing-section--navbar-top{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 8px 0px;
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    gap: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #dfdfdf;  
+}
+.landing-section--navbar-top div {
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px 0;
+    gap: 30px;
+    max-width: 1300px;
+    width: 100%;
+}
+.landing-section--navbar-top div a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: all .2s linear; 
+    
+}
+.landing-section--navbar-top a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: all .2s linear;
+}
+.landing-section--navbar-top a:hover{
+    
+    color: #dfdfdf;
+}
+
+/* Aqui empieza el navbar button */
+
+
+.landing-section--navbar-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.navbar-button--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+}
+.navbar-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+    max-width: 1300px;
+    width: 100%;
+}
+.navbar-button-logo{
+    width: 60px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar-button--container-search{
+    display: flex;
+    align-items: center;
+    background-color: #dfdfdf;
+    height: 46px;
+    padding-left: 10px;
+    width: 80%;
+}
+
+.navbar-button--container-search img{
+    height: 24px;
+    width: 24px;
+    background-color: #dfdfdf;
+}
+.navbar-button--container-search input{
+    height: 46px;
+    background-color: #dfdfdf;
+    border: none;
+    font-family: var(--font-family-third);
+    font-size: 14px;
+    letter-spacing: -0.9px;
+    flex: 1;
+    padding-left: 10px;
+    
+}
+.navbar-button--container-search button{
+    height: 46px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0 26px;
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.9px;
+   
+}
+.navbar-button-sing{
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-family: var(--font-family-primary);
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    
+}
+.navbar-button-sing a{   
+    
+    cursor: pointer;
+    cursor: pointer;
+    transition: all .15s linear;
+} 
+ .navbar-button-sing a:nth-child(1){
+    padding: 14px 30px; 
+    border: 1px solid #cccccc;
+    
+    padding: 14px 30px;
+}
+.navbar-button-sing a:hover{
+    
+    
+    color: #dfdfdf;
+}
+.navbar-button-sing a:nth-child(1):hover{
+    border: 1px solid #dfdfdf;
+}
+
+
+/* Aqui empieza el article del landing section */
+
+.article-container{
+    height: calc(100vh - 165px);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: var(--font-family-primary);
+    color: white;
+    
+}
+.article-container-info{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-family: var(--font-family-primary);
+    color: white;
+    height: 100%;
+    max-width: 700px;
+    width: 100%;
+    padding: 60px 0;
+}
+.article-container-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    max-width: 500px;
+    width: 100%;
+}
+.article-container h1{
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+    margin: 56px 0;
+    line-height: 1.2;
+}
+.article-container p{
+    font-size: 16px;
+    text-align: center;
+    
+    font-family: var(--font-family-secundary);
+}
+.article-container h2{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px 0;
+    
+}
+
+#article-container--anchor-container {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} 
+
+#article-container--anchor-container a{
+   text-decoration: none;
+   padding: 20px 50px;
+   border-radius: 50px;
+   font-family: var(--font-family-primary);
+    font-size: 16px;
+    color: white;
+    white-space: nowrap;
+} 
+#article-container--anchor-container a:nth-child(1){
+    background-color: #ffc329;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+ } 
+ #article-container--anchor-container a:nth-child(2){
+    background-color: transparent;
+    border: 3px solid white;
+    font-weight: bold;
+    
+ } 
+
+/* opensource section */
+
+.openSource-div{
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+    font-family: var(--font-family-primary);
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.openSource-div article{
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+} 
+.openSource-div article img{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 40px;
+} 
+
+.openSource-div article h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+} 
+
+.openSource-div article p{
+    font-family: var(--font-family-secundary);
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.5;
+} 
+
+.footer{
+    padding: 50px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    width: 100%;
+    gap: 20px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-right: 50px;
+}
+
+.footer-logo img{
+    /* background-color: white; */
+    width: 60px;
+}
+.footer-logo img:nth-child(2){
+    /* background-color: white; */
+    width: 50px;
+}
+.footer-support, .footer-company, .footer-terms{
+    flex: 1;
+    
+}
+.footer-support h3, .footer-company h3, .footer-terms h3{
+   margin-bottom: 20px;
+   color: #333;
+   font-family: var(--font-family-primary);
+   font-weight: bold;
+   margin-top: 10px;
+    
+}
+.footer-support ul li, .footer-company ul li, .footer-terms ul li{
+    margin-bottom: 16px;
+    color:rgb(0 0 0 / 70%);
+    font-size: 16px;
+    cursor: pointer;
+ }
